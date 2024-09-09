@@ -1,5 +1,9 @@
 # Currency Master
-
+[![npm package][npm-img]][npm-url]
+[![Build Status][build-img]][build-url]
+[![Issues][issues-img]][issues-url]
+[![Code Coverage][codecov-img]][codecov-url]
+[![Semantic Release][semantic-release-img]][semantic-release-url]
 Currency Master is a simple TypeScript library that provides methods for fetching real-time or historical exchange rates and converting currency from one type to another. It interacts with the [Fawaz Ahmed Currency API](https://github.com/fawazahmed0/currency-api) to retrieve exchange rates.
 
 ## Installation
@@ -84,3 +88,14 @@ CurrencyEnum.Euro   // Euro
 ## License
 
 This project is licensed under the MIT License.
+
+[build-img]:https://github.com/dev-ahmadbilal/currency-master/actions/workflows/release.yml/badge.svg
+[build-url]:https://github.com/dev-ahmadbilal/currency-master/actions/workflows/release.yml
+[npm-img]:https://img.shields.io/npm/v/currency-master
+[npm-url]:https://www.npmjs.com/package/currency-master
+[issues-img]:https://img.shields.io/github/issues/dev-ahmadbilal/currency-master
+[issues-url]:https://github.com/dev-ahmadbilal/currency-master/issues
+[codecov-img]:https://codecov.io/gh/dev-ahmadbilal/currency-master/branch/main/graph/badge.svg
+[codecov-url]:https://codecov.io/gh/dev-ahmadbilal/currency-master
+[semantic-release-img]:https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
+[semantic-release-url]:https://github.com/semantic-release/semantic-release
