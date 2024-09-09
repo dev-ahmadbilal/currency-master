@@ -1,7 +1,7 @@
 {
-  "name": "npm-pkg-boilerplate",
-  "version": "0.0.x",
-  "description": "A boilerplate project for npm packages",
+  "name": "currency-master",
+  "version": "0.0.1",
+  "description": "A simple TypeScript library that provides methods for fetching real-time or historical exchange rates and converting currency",
   "main": "./lib/index.js",
   "files": [
     "lib/**/*"
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dev-ahmadbilal/npm-pkg-boilerplate.git"
+    "url": "git+https://github.com/dev-ahmadbilal/currency-master.git"
   },
   "keywords": [
     "nodejs",
@@ -34,9 +34,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dev-ahmadbilal/npm-pkg-boilerplate/issues"
+    "url": "https://github.com/dev-ahmadbilal/currency-master/issues"
   },
-  "homepage": "https://github.com/dev-ahmadbilal/npm-pkg-boilerplate#readme",
+  "homepage": "https://github.com/dev-ahmadbilal/currency-master#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^19.4.1",
     "@eslint/js": "^9.9.1",
