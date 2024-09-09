@@ -64,7 +64,7 @@ export class ConversionMaster {
    * const historicalConversion = await conversionMaster.convertCurrency(CurrencyEnum.USD, CurrencyEnum.EUR, 100, '2024-09-01');
    * console.log(historicalConversion); // Output: "90.00" (depending on the historical rate)
    */
-  static async convertCurrency(from: CurrencyEnum, to: CurrencyEnum, amount: number, date?: string): Promise<string> {
+  static async convert(from: CurrencyEnum, to: CurrencyEnum, amount: number, date?: string): Promise<string> {
     try {
       const fromRates = await ConversionMaster.getCurrencyRates(from, date);
 

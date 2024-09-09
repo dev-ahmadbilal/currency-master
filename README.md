@@ -23,15 +23,14 @@ You can fetch the latest exchange rates for a specific currency, or fetch histor
 #### Fetching Latest Rates
 
 ```ts
-const conversionMaster = new ConversionMaster();
-const rates = await conversionMaster.getCurrencyRates(CurrencyEnum.USD);
+const rates = await ConversionMaster.getCurrencyRates(CurrencyEnum.UnitedStatesDollar);
 console.log(rates); // Output: { "eur": 0.92, "gbp": 0.80, ... }
 ```
 
 #### Fetching Historical Rates
 
 ```ts
-const historicalRates = await conversionMaster.getCurrencyRates(CurrencyEnum.USD, '2024-09-01');
+const historicalRates = await ConversionMaster.getCurrencyRates(CurrencyEnum.UnitedStatesDollar, '2024-09-01');
 console.log(historicalRates); // Output: { "eur": 0.90, "gbp": 0.78, ... }
 ```
 
@@ -42,14 +41,14 @@ You can convert a specific amount from one currency to another using either real
 #### Real-Time Conversion
 
 ```ts
-const convertedAmount = await conversionMaster.convertCurrency(CurrencyEnum.USD, CurrencyEnum.EUR, 100);
+const convertedAmount = await ConversionMaster.convert(CurrencyEnum.UnitedStatesDollar, CurrencyEnum.Euro, 100);
 console.log(convertedAmount); // Output: "92.00" (depending on the exchange rate)
 ```
 
 #### Historical Conversion
 
 ```ts
-const historicalConversion = await conversionMaster.convertCurrency(CurrencyEnum.USD, CurrencyEnum.EUR, 100, '2024-09-01');
+const historicalConversion = await ConversionMaster.convert(CurrencyEnum.UnitedStatesDollar, CurrencyEnum.Euro, 100, '2024-09-01');
 console.log(historicalConversion); // Output: "90.00" (depending on the historical rate)
 ```
 
@@ -62,7 +61,7 @@ console.log(historicalConversion); // Output: "90.00" (depending on the historic
   - **date** (optional): Historical date in `YYYY-MM-DD` format. If omitted, the latest rates will be fetched.
   - **Returns**: A promise that resolves to the exchange rates for the base currency.
 
-- `convertCurrency(from: CurrencyEnum, to: CurrencyEnum, amount: number, date?: string): Promise<string>`
+- `convert(from: CurrencyEnum, to: CurrencyEnum, amount: number, date?: string): Promise<string>`
   - **from**: Base currency.
   - **to**: Target currency.
   - **amount**: Amount to convert.
@@ -78,9 +77,8 @@ console.log(historicalConversion); // Output: "90.00" (depending on the historic
 Example:
 
 ```ts
-CurrencyEnum.USD   // US Dollar
-CurrencyEnum.EUR   // Euro
-CurrencyEnum.GBP   // British Pound
+CurrencyEnum.UnitedStatesDollar   // US Dollar
+CurrencyEnum.Euro   // Euro
 ```
 
 ## License
