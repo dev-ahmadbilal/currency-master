@@ -1,6 +1,6 @@
 {
   "name": "currency-master",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A comprehensive library for currency conversion and formatting, with support for multiple locales and customizable options for converting numbers to words and handling currency.",
   "main": "./lib/index.js",
   "files": [
