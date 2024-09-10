@@ -189,43 +189,28 @@ const c1 = new Currency('1234.56', {
 console.log(c1.toWords()); // 'One Thousand Two Hundred Thirty Four Pounds And Fifty Six Pence Only'
 ```
 
-**Converting Number Only:**
-
-To convert just the numeric part to words without currency formatting, use:
-```typescript
-const c2 = new Currency('1234.56', {
-  toWords: {
-    locale: LocaleEnum.EnglishUnitedStates,
-    converterOptions: {
-      currency: false, // Disable currency formatting
-    },
-  },
-});
-console.log(c2.toWords()); // 'One Thousand Two Hundred Thirty Four Point Fifty Six'
-```
-
 **Support for Multiple Locales:**
 
 The `toWords` method supports various locales for diverse languages and regions:
 
 **Urdu (Pakistan):**
 ```typescript
-const c3 = new Currency('1234.56', {
+const c2 = new Currency('1234.56', {
   toWords: {
     locale: LocaleEnum.UrduPakistan,
   },
 });
-console.log(c3.toWords()); // 'ایک ہزار دو سو چونتیس روپے اور چھپن پیسے صرف'
+console.log(c2.toWords()); // 'ایک ہزار دو سو چونتیس روپے اور چھپن پیسے صرف'
 ```
 
 **Hindi (India):**
 ```typescript
-const c4 = new Currency('1234.56', {
+const c3 = new Currency('1234.56', {
   toWords: {
     locale: LocaleEnum.HindiIndia,
   },
 });
-console.log(c4.toWords()); // 'एक हज़ार दो सौ चौंतीस रुपये और छप्पन पैसे'
+console.log(c3.toWords()); // 'एक हज़ार दो सौ चौंतीस रुपये और छप्पन पैसे'
 ```
 
 The `toWords` method is highly versatile and supports various locales, enabling you to format numbers into words in different languages and regional formats.
