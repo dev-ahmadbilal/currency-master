@@ -506,8 +506,8 @@ It contains a set of predefined currency codes to be used with the `CurrencyConv
 Example:
 
 ```ts
+CurrencyEnum.Euro                 // Euro
 CurrencyEnum.UnitedStatesDollar   // US Dollar
-CurrencyEnum.Euro   // Euro
 ```
 
 
@@ -519,7 +519,7 @@ Example:
 
 ```ts
 CountryCurrencyEnum.US   // USD
-CurrencyEnum.AE         // AED
+CountryCurrencyEnum.AE   // AED
 ```
 
 ## Contributing
