@@ -1,4 +1,5 @@
 import Currency from '../currency';
+import { ToWordsOptions } from './to-word.type';
 
 export type CurrencySettings = {
   symbol: string;
@@ -13,4 +14,5 @@ export type CurrencySettings = {
   useVedic?: boolean;
   groups: RegExp;
   format: (currency: Currency, settings: CurrencySettings) => string;
+  toWords?: ToWordsOptions;
 };

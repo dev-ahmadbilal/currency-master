@@ -1,3 +1,4 @@
+import { ToWords } from './to-words';
 import { CurrencySettings } from './types/currency-settings';
 
 const defaultSettings: CurrencySettings = {
@@ -18,6 +19,7 @@ class Currency {
   public value: number;
   private settings: CurrencySettings;
   private precisionFactor: number;
+  private toWordsInstance: ToWords;
 
   constructor(value: number | string | Currency, options?: Partial<CurrencySettings>) {
     this.settings = { ...defaultSettings, ...options };
@@ -29,6 +31,8 @@ class Currency {
     if (this.settings.useVedic) {
       this.settings.groups = /(\d)(?=(\d\d)+\d\b)/g;
     }
+    // Initialize ToWords with provided options
+    this.toWordsInstance = new ToWords(options?.toWords);
   }
 
   /**
@@ -190,6 +194,18 @@ class Currency {
    */
   toJSON(): number {
     return this.value;
+  }
+
+  /**
+   * Converts the currency value to words.
+   * @param options - Optional converter options for customizing the conversion.
+   * @returns The currency value in words.
+   * @example
+   * const currency = new Currency(1234.56);
+   * const words = currency.toWords(); // Returns 'one thousand two hundred thirty-four dollars and fifty-six cents'
+   */
+  toWords(): string {
+    return this.toWordsInstance.convert(parseFloat(this.toString()));
   }
 }
 
