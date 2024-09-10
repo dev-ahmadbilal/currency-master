@@ -1,7 +1,7 @@
 {
   "name": "currency-master",
   "version": "1.0.2",
-  "description": "A simple TypeScript library that provides methods for fetching real-time or historical exchange rates and converting currency",
+  "description": "A comprehensive library for currency conversion and formatting, with support for multiple locales and customizable options for converting numbers to words and handling currency.",
   "main": "./lib/index.js",
   "files": [
     "lib/**/*"
@@ -13,7 +13,6 @@
     "prepare": "husky install",
     "lint": "eslint ./src/",
     "lint:fix": "eslint ./src/ --fix",
-    "start": "npx ts-node src/index.ts",
     "test": "jest --coverage"
   },
   "repository": {
@@ -21,6 +20,18 @@
     "url": "git+https://github.com/dev-ahmadbilal/currency-master.git"
   },
   "keywords": [
+    "currency",
+    "currency conversion",
+    "currency formatting",
+    "number to words",
+    "currency operations",
+    "currency mapping",
+    "country code",
+    "financial",
+    "money",
+    "finance",
+    "currency calculator",
+    "currency utilities",
     "nodejs",
     "typescript",
     "javascript",
