@@ -13,7 +13,6 @@
     "prepare": "husky install",
     "lint": "eslint ./src/",
     "lint:fix": "eslint ./src/ --fix",
-    "start": "npx ts-node src/test.ts",
     "test": "jest --coverage"
   },
   "repository": {
