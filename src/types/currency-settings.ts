@@ -1,4 +1,4 @@
-import Currency from '../currency';
+import { Currency } from '../currency';
 import { ToWordsOptions } from './to-word.type';
 
 export type CurrencySettings = {
