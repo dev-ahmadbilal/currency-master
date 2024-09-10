@@ -1,5 +1,5 @@
 import { CurrencySettings } from '../src';
-import Currency from '../src/currency';
+import { Currency } from '../src/currency';
 
 describe('Currency', () => {
   test('should initialize with a number', () => {

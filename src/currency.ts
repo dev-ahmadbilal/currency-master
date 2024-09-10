@@ -14,7 +14,7 @@ const defaultSettings: CurrencySettings = {
   format: formatCurrency,
 };
 
-class Currency {
+export class Currency {
   public intValue: number;
   public value: number;
   private settings: CurrencySettings;
@@ -226,5 +226,3 @@ function formatCurrency(currency: Currency, settings: CurrencySettings): string 
     .replace('!', symbol)
     .replace('#', dollars.replace(groups, '$1' + separator) + (cents ? decimal + cents : ''));
 }
-
-export default Currency;
