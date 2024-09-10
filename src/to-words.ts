@@ -4,7 +4,7 @@ import { ConverterOptions, ToWordsOptions, ConstructorOf, LocaleInterface, Numbe
 export { LOCALES };
 
 export const DefaultConverterOptions: ConverterOptions = {
-  currency: false,
+  currency: true,
   ignoreDecimal: false,
   ignoreZeroCurrency: false,
   doNotAddOnly: false,
