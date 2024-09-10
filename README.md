@@ -1,6 +1,7 @@
 # Currency Master
 [![npm package][npm-img]][npm-url]
 [![Build Status][build-img]][build-url]
+[![Downloads][download-img]][npm-url]
 [![Issues][issues-img]][issues-url]
 [![Code Coverage][codecov-img]][codecov-url]
 [![Semantic Release][semantic-release-img]][semantic-release-url]
@@ -93,6 +94,7 @@ This project is licensed under the MIT License.
 [build-url]:https://github.com/dev-ahmadbilal/currency-master/actions/workflows/release.yml
 [npm-img]:https://img.shields.io/npm/v/currency-master
 [npm-url]:https://www.npmjs.com/package/currency-master
+[download-img]: https://badgen.net/npm/dt/currency-master
 [issues-img]:https://img.shields.io/github/issues/dev-ahmadbilal/currency-master
 [issues-url]:https://github.com/dev-ahmadbilal/currency-master/issues
 [codecov-img]:https://codecov.io/gh/dev-ahmadbilal/currency-master/branch/main/graph/badge.svg

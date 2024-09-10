@@ -37,7 +37,7 @@ export class ConversionMaster {
   static async getCurrencyRates(currency: CurrencyEnum, date?: string): Promise<CurrencyRates> {
     try {
       const formattedDate = date || ConversionMaster.formatDate(new Date());
-      const url = `${API_BASE_URL}@${formattedDate}/v1/currencies/${currency}.json`;
+      const url = `${API_BASE_URL}@${formattedDate}/v1/currencies/${currency.toLowerCase()}.json`;
       const response = await fetch(url);
       const data: CurrencyApiResponse = await response.json();
       return data[currency] as CurrencyRates;
